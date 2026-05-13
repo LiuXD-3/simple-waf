@@ -1,0 +1,32 @@
+{
+  "rules": [
+    {
+      "name": "SQL Injection",
+      "pattern": "(?i)(union\\s+select|select\\s+.*\\s+from|sleep\\(|benchmark\\(|\\b(or|and)\\b\\s*\\w+\\s*=\\s*\\w+|\\b(or|and)\\s*\\w+\\s*=\\s*\\w+|\\w+\\s*=\\s*\\w+\\s+(or|and)\\s+\\w+\\s*=\\s*\\w+|--|#|/\\*.*\\*/|'.*=')",
+      "action": "block"
+    },
+    {
+      "name": "XSS",
+      "pattern": "(?i)(<script|alert\\(|onerror=|onload=|javascript:|<iframe|<img\\s+src=)",
+      "action": "block"
+    },
+    {
+      "name": "Path Traversal",
+      "pattern": "(\\.\\./|\\.\\.%5c|%2e%2e%2f|%252e%252e%252f)",
+      "action": "block"
+    },
+    {
+      "name": "Malicious User-Agent",
+      "pattern": "(?i)(sqlmap|nmap|nikto|dirb|wpscan|burp)",
+      "action": "block"
+    }
+  ],
+  "rate_limit": {
+    "requests_per_minute": 60,
+    "block_duration_seconds": 300
+  },
+  "whitelist_urls": [
+    "/health",
+    "/metrics"
+  ]
+}

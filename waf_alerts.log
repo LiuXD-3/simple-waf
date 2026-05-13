@@ -1,0 +1,26 @@
+{"timestamp": "2026-05-13 20:06:37", "ip": "127.0.0.1", "message": "Attack detected: SQL Injection", "request": {"method": "GET", "path": "/search", "args": {"q": "1 UNION SELECT 1,2,3"}, "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 SLBrowser/9.0.8.3131 SLBChan/111 SLBVPV/64-bit"}}
+{"timestamp": "2026-05-13 20:09:09", "ip": "127.0.0.1", "message": "Attack detected: SQL Injection", "request": {"method": "GET", "path": "/search", "args": {"q": "1 UNION SELECT 1,2,3"}, "user_agent": "python-requests/2.34.0"}}
+{"timestamp": "2026-05-13 20:17:19", "ip": "127.0.0.1", "message": "Attack detected: SQL Injection", "request": {"method": "GET", "path": "/search", "args": {"q": "1 UNION SELECT 1,2,3"}, "user_agent": "python-requests/2.34.0"}}
+{"timestamp": "2026-05-13 20:23:23", "ip": "127.0.0.1", "message": "Attack detected: SQL Injection", "request": {"method": "GET", "path": "/search", "args": {"q": "admin OR '1'='1"}, "user_agent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell/5.1.26100.8115"}}
+{"timestamp": "2026-05-13 20:25:20", "ip": "127.0.0.1", "message": "Attack detected: SQL Injection", "request": {"method": "GET", "path": "/search", "args": {"q": "1 UNION SELECT 1,2,3"}, "user_agent": "python-requests/2.33.1"}}
+{"timestamp": "2026-05-13 20:25:20", "ip": "127.0.0.1", "message": "Attack detected: SQL Injection", "request": {"method": "GET", "path": "/search", "args": {"q": "admin' OR '1'='1"}, "user_agent": "python-requests/2.33.1"}}
+{"timestamp": "2026-05-13 20:27:22", "ip": "127.0.0.1", "message": "Attack detected: SQL Injection", "request": {"method": "GET", "path": "/search", "args": {"q": "1 UNION SELECT 1,2,3"}, "user_agent": "python-requests/2.34.0"}}
+{"timestamp": "2026-05-13 20:29:09", "ip": "127.0.0.1", "message": "Attack detected: SQL Injection", "request": {"method": "GET", "path": "/search", "args": {"q": "1 UNION SELECT 1,2,3"}, "user_agent": "python-requests/2.34.0"}}
+{"timestamp": "2026-05-13 20:29:09", "ip": "127.0.0.1", "message": "Attack detected: XSS", "request": {"method": "GET", "path": "/search", "args": {"q": "<script>alert(1)</script>"}, "user_agent": "python-requests/2.34.0"}}
+{"timestamp": "2026-05-13 20:29:09", "ip": "127.0.0.1", "message": "Attack detected: Path Traversal", "request": {"method": "GET", "path": "/search", "args": {"q": "../../etc/passwd"}, "user_agent": "python-requests/2.34.0"}}
+{"timestamp": "2026-05-13 20:30:22", "ip": "127.0.0.1", "message": "Attack detected: SQL Injection", "request": {"method": "GET", "path": "/search", "args": {"q": "1 UNION SELECT 1,2,3"}, "user_agent": "python-requests/2.34.0"}}
+{"timestamp": "2026-05-13 20:30:22", "ip": "127.0.0.1", "message": "Attack detected: XSS", "request": {"method": "GET", "path": "/search", "args": {"q": "<script>alert(1)</script>"}, "user_agent": "python-requests/2.34.0"}}
+{"timestamp": "2026-05-13 20:30:22", "ip": "127.0.0.1", "message": "Attack detected: Path Traversal", "request": {"method": "GET", "path": "/search", "args": {"q": "../../etc/passwd"}, "user_agent": "python-requests/2.34.0"}}
+{"timestamp": "2026-05-13 20:30:22", "ip": "127.0.0.1", "message": "Attack detected: Malicious User-Agent", "request": {"method": "GET", "path": "/", "args": {}, "user_agent": "sqlmap/1.5"}}
+{"timestamp": "2026-05-13 20:30:28", "ip": "127.0.0.1", "message": "Rate limit exceeded (60 requests/min), blacklisted for 300s", "request": {"method": "GET", "path": "/", "args": {}, "user_agent": "python-requests/2.34.0"}}
+{"timestamp": "2026-05-13 20:35:14", "ip": "127.0.0.1", "message": "Attack detected: SQL Injection", "path": "/search"}
+{"timestamp": "2026-05-13 20:35:14", "ip": "127.0.0.1", "message": "Attack detected: XSS", "path": "/search"}
+{"timestamp": "2026-05-13 20:35:14", "ip": "127.0.0.1", "message": "Attack detected: Path Traversal", "path": "/search"}
+{"timestamp": "2026-05-13 20:35:14", "ip": "127.0.0.1", "message": "Attack detected: Malicious User-Agent", "path": "/"}
+{"timestamp": "2026-05-13 20:35:20", "ip": "127.0.0.1", "message": "Rate limit exceeded, blacklisted for 300s", "path": "/"}
+{"timestamp": "2026-05-13 20:38:26", "ip": "127.0.0.1", "message": "Rate limit exceeded, blacklisted for 300s", "path": "/"}
+{"timestamp": "2026-05-13 20:39:28", "ip": "127.0.0.1", "message": "Attack detected: SQL Injection", "path": "/search"}
+{"timestamp": "2026-05-13 20:39:28", "ip": "127.0.0.1", "message": "Attack detected: XSS", "path": "/search"}
+{"timestamp": "2026-05-13 20:39:28", "ip": "127.0.0.1", "message": "Attack detected: Path Traversal", "path": "/search"}
+{"timestamp": "2026-05-13 20:39:28", "ip": "127.0.0.1", "message": "Attack detected: Malicious User-Agent", "path": "/"}
+{"timestamp": "2026-05-13 20:39:28", "ip": "127.0.0.1", "message": "Rate limit exceeded, blacklisted for 300s", "path": "/"}
